@@ -72,8 +72,8 @@ export const validateArguments = (date, turnaround) => {
     if ([undefined, null, ''].includes(turnaround)) {
         throw new Error('Turnaround is required')
     }
-    if (typeof turnaround !== 'number' || isNaN(turnaround)) {
-        throw new Error('Turnaround must be number')
+    if (!Number.isInteger(turnaround)) {
+        throw new Error('Turnaround must be integer')
     }
     return true
 }

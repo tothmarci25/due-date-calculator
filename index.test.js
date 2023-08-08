@@ -43,9 +43,9 @@ describe('#tests', () => {
                 .toThrow(new Error('Turnaround is required'));
         });
 
-        test('throwing turnaround must be a number', () => {
+        test('throwing turnaround must be integer', () => {
             expect(() => validateArguments(new Date(), true))
-                .toThrow(new Error('Turnaround must be number'));
+                .toThrow(new Error('Turnaround must be integer'));
         });
     });
 
