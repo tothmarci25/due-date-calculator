@@ -5,7 +5,7 @@ const END_OF_WORK = 17;
 const DAILY_NON_WORKING_HOURS = 16;
 
 
-export const calculateDueDate = (submitDate, turnaround) => {
+const calculateDueDate = (submitDate, turnaround) => {
     validateArguments(submitDate, turnaround)
 
     let resultDate = addWorkingDays(submitDate, turnaround)
@@ -77,3 +77,5 @@ export const validateArguments = (date, turnaround) => {
     }
     return true
 }
+
+export default calculateDueDate
