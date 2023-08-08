@@ -1,4 +1,4 @@
-import {calculateDueDate, validateArguments, addRemainingWorkingHours} from "./index";
+import calculateDueDate, {validateArguments, addRemainingWorkingHours} from "./index";
 
 
 describe('#tests', () => {
